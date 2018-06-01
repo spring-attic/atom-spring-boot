@@ -5,7 +5,7 @@ import { JVM } from '@pivotal-tools/jvm-launch-utils';
 export declare class SpringBootLanguageClient extends JavaProcessLanguageClient {
     constructor();
     protected postInitialization(server: ActiveServer): void;
-    private sendConfig(server);
+    private sendConfig;
     getGrammarScopes(): string[];
     getLanguageName(): string;
     getServerName(): string;

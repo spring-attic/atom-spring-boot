@@ -2,6 +2,6 @@ import { StsAdapter, HighlightParams } from '@pivotal-tools/atom-languageclient-
 export declare class BootStsAdapter extends StsAdapter {
     constructor();
     onHighlight(params: HighlightParams): void;
-    private markHintsForEditor(editor, ranges);
-    private createHintMarker(editor, range);
+    private markHintsForEditor;
+    private createHintMarker;
 }
