@@ -1,4 +1,4 @@
-import { JavaProcessLanguageClient } from '@pivotal-tools/atom-languageclient-commons';
+import { JavaProcessLanguageClient, JavaOptions } from '@pivotal-tools/atom-languageclient-commons';
 import { BootStsAdapter } from './boot-sts-adapter';
 import { ActiveServer } from 'atom-languageclient';
 import { JVM } from '@pivotal-tools/jvm-launch-utils';
@@ -14,4 +14,5 @@ export declare class SpringBootLanguageClient extends JavaProcessLanguageClient 
     launchVmArgs(jvm: JVM): Promise<string[]>;
     createStsAdapter(): BootStsAdapter;
     filterChangeWatchedFiles(filePath: string): boolean;
+    getJavaOptions(): JavaOptions;
 }
